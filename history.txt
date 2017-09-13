@@ -1,0 +1,75 @@
+    1  VirtualBox --startvm XP
+    2  pwd
+    3  cd.
+    4  cd .
+    5  cd ..
+    6  pwd
+    7  $ x=10
+    8  echo x=10
+    9  echo x =$
+   10  $ = 2
+   11  echo$ echo -e
+   12  @ echo x =$x
+   13  $ echo x = $x
+   14  x =10
+   15  x=10
+   16  echo the value is x =
+   17  echo the value is x = x
+   18  echo x = $x
+   19  echo vertiba ir x = $x
+   20  x = 10
+   21  x=10
+   22  b=5
+   23  echo vertiba ir x = $x+b
+   24  echo vertiba ir x = $x + $b
+   25  echo vertiba ir x = $x -1
+   26  echo -e /b
+   27  echo -e
+   28  echo -e /nrobis
+   29  echo -e "robis \nrobis /nir /
+echo -e "robis \nrobis /nir"
+echo -e "robis \nrobis /nir /
+   30  $echo -e "robis \nrobis /nir"
+   31  echo -e "Tecmint \nis \na"
+   32  echo -e "datormaciba \nir \nlaba"
+   33  echo -e "mani /vsauc /vroberts
+echo -e >"mani \vsauc \vrobis
+   34  echo -e "mani \vsauc \vrobis"
+   35  echo -e "mani \vsauc \trobis"
+   36  echo -e "mani \vsauc \nrobis"
+   37  echo -e "mani \nsauc \nrobis"
+   38  echo -e "mani \tsauc \nrobis"
+   39  echo -e "mani \tsauc \rrobis"
+   40  echo -e "mani \tsauc \\robis"
+   41  echo -e "mani \tsauc t\robis"
+   42  echo -e "mani \tsauc \trobis"
+   43  echo "Test Page" > testpage
+   44  ## check Content
+   45  rm
+   46  rmdir
+   47  mkdir datori
+   48  pwd
+   49  ls
+   50  rm datori
+   51  ls
+   52  rmdir datori
+   53  ls
+   54  mkdir datormaciba
+   55  ls
+   56  pwd
+   57  rmdir datormaciba
+   58  ls
+   59  echo -e echo "datori" > testpage
+   60  echo -n "datormaciba ir "
+   61  pwd
+   62  echo -e "tecmint \ris a com of nerds"
+   63  echo -e "tecmint is a com \cof nerds"
+   64  echo *
+   65  echo *,jpeg
+   66  echo "test page" > teksts.txt
+   67  darbi1
+   68  cd darbi1
+   69  ls -la
+   70  ls -l
+   71  cd darbi
+   72  history > history.txt
