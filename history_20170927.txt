@@ -1,68 +1,33 @@
     1  VirtualBox --startvm XP
     2  firefox &
-    3  git clone https://github.com/robertsmukans/DMI
-    4  ls
-    5  ls -a
+    3  nano
+    4  echo $0
+    5  nano shell_programming.sh
     6  ls -la
     7  pwd
-    8  l -a
-    9  l -la
-   10  ls
-   11  history
-   12  ls
-   13  cat history
-   14  ls -l
-   15  cd DMI
-   16  ls -la
-   17  NAME="zara ali"
-   18  var1="zara ali"
-   19  var2="100"
-   20  echo $NAME
-   21  echo $var1
-   22  echo $var2
-   23  readonly NAME
-   24  NAME="qadiri"
-   25  echo $NAME
-   26  NAME="zara ali"
-   27  unset NAME
-   28  NAME="zara ali"
-   29  unset NAME
-   30  echo $NAME
-   31  unset var1
-   32  echo $var1
-   33  echo $var2
-   34  a="100"
-   35  echo $a
-   36  b="20"
-   37  echo $a -$b
-   38  x =100
-   39  x= 100
-   40  x=100
-   41  a=200
-   42  echo $a
-   43  echo $b
-   44  unset a
-   45  echo $a
-   46  echo $b
-   47  unset b
-   48  echo $b
-   49  nano
-   50  pwd
-   51  nano
-   52  nano shell_programming.sh
-   53  ls -l
-   54  echo $0
-   55  chmod 744 shell_programming.sh
-   56  ls -l
-   57  shell_programming.sh
-   58  ./shell_programming.sh 
-   59  cat shell_programming.sh 
-   60  nano shell_programming.sh 
-   61  ./shell_programming.sh 
-   62  nano shell_programming.sh 
-   63  ./shell_programming.sh 
-   64  nano shell_programming.sh 
-   65  ./shell_programming.sh 
-   66  ls -la
-   67  nano git-upload
-   68  history > history_20170927.txt
+    8  nano shell_programming.sh
+    9  echo $0
+   10  echo $n
+   11  echo $$
+   12  echo $n
+   13  echo $#
+   14  echo $*
+   15  echo $@
+   16  echo $?
+   17  echo $!
+   18  nano shell_programming.sh
+   19  shell_programming.sh
+   20  cat shell_programming.sh
+   21  shell_programming.sh arg1
+   22  shell_programming.sh arg1 arg2
+   23  shell_programming.sh arg1 arg2 arg3
+   24  nano shell_programming.sh
+   25  shell_programming.sh 
+   26  nano shell_programming.sh
+   27  shell_programming.sh 
+   28  nano shell_programming.sh
+   29  shell_programming.sh arg1 arg2
+   30  nano shell_programming.sh
+   31  shell_programming.sh 
+   32  nano git-upload
+   33  history > history_20170927.txt
