@@ -1,29 +1,29 @@
-# - veikt komentâru nano logâ
-$ echo – ar ðo komandu var ievadît tekstu, kas tiks attçlots ekrânâ
-$PATH – pievienojam izvçlçto direktoriju ceïiem
+# - veikt komentaru nano logâ
+$ echo – ar so komandu var ievadit tekstu, kas tiks attelots ekrana
+$PATH – pievienojam izveleto direktoriju celiem
 Cd .. – var iziet no mapes
-Cd ~ - aiziet atpakaï uz home directory
+Cd ~ - aiziet atpakal uz home directory
 Cd skola – var aiziet uz mapi skola
-Chmod 744 – veikt korekcijas ðajâ failâ
+Chmod 744 – veikt korekcijas sajâ faila
 Chromium & - atver chrome pârlûkprogrammu
-Cp mape1 mape2 – mapes 1 saturu pârkopç uz mape2
-Echo $PATH – redzam caur kâdiem ceïiem atrodas izvçlçtâ direktorija
-Firefox & - atver firefox pârlûkprogrammu
+Cp mape1 mape2 – mapes 1 saturu parkope uz mape2
+Echo $PATH – redzam caur kâdiem celiem atrodas izvçleta direktorija
+Firefox & - atver firefox parlûkprogrammu
 Git add . – pievieno kontu
 Git commit –m “datumslaiks” –  iestata faila datumu un laiku
 Git config –global user.email – piesaista savam github kontam
-Git push origin master -  augsupielâdç datus no terminâla github kontâ
-History – parâda rakstîto vçsturi
-History > hystory1 – vçsturi pârnes uz jaunu failu
-Ls – parâda eksistçjoðâs mapes
-Ls –a – parâda visus eksistçjoðos failus
-Ls –l – parâda informâciju par failu
-Ls –la – parâda veiktâs darbîbas uz esoðâs maðînas
+Git push origin master -  augsupielade datus no terminala github kontâ
+History – parada rakstito vesturi
+History > hystory1 – vesturi parnes uz jaunu failu
+Ls – parâda eksistçjosas mapes
+Ls –a – parâda visus eksistejosos failus
+Ls –l – parâda informaciju par failu
+Ls –la – parâda veiktas darbibas uz esosas masinas
 Mkdir – var izveidot jaunu mapi
 Nano – atver logu, kur var veidot skriptu
-Pwd – parâda kur ðobrîd atrodos
-Readonly name – saglabâ ðo mainîgo nemainîgu visu darbîbas laiku
+Pwd – parâda kur sobrîd atrodos
+Readonly name – saglaba so mainîgo nemainigu visu darbibas laiku
 Rmdir – var dzçst kâdu mapi
-Uname –r – parâda sistçmas versiju
-Who – parâda uz kâ es strâdâju
-Whoami – parâda kas es esmu maðînâ
+Uname –r – parada sistemas versiju
+Who – parada uz kâ es strâdâju
+Whoami – parada kas es esmu masina
