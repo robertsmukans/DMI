@@ -1,0 +1,161 @@
+    1  VirtualBox --startvm XP
+    2  x = 2
+    3  x=2
+    4  y=1
+    5  if x =N+1; x=
+    6  git clone https://github.com/robertsmukans/DMI
+    7  git-upload
+    8  l
+    9  ls
+   10  cd DMI
+   11  ls -l
+   12  nano shell_operators.sh
+   13  cat shell_operators.sh
+   14  nano shell_operators.sh
+   15  shell.operators.sh
+   16  ls -l
+   17  shell.operators.sh
+   18  ./shell_operators.sh
+   19  chmod 744 shell.operators.sh
+   20  nano shell_operators.sh
+   21  ./shell_operators.sh
+   22  PATH
+   23  nano shell_operators.sh
+   24  ./shell_operators.sh
+   25  echo $PATH
+   26  echo PATH
+   27  PATH
+   28  echo $PATH
+   29  ./shell_operators.sh
+   30  chmod 744 shell_operators.sh
+   31  ./shell_operators.sh
+   32  echo $PATH
+   33  ls
+   34  ls -l
+   35  ./shell_operators.sh
+   36  nano shell_operators.sh
+   37  ./shell_operators.sh
+   38  nano shell_operators.sh
+   39  ./shell_operators.sh
+   40  nano shell_operators.sh
+   41  ./shell_operators.sh
+   42  nano shell_operators.sh
+   43  ./shell_operators.sh
+   44  nano shell_operators.sh
+   45  ./shell_operators.sh
+   46  nano shell_operators.sh
+   47  ./shell_operators.sh
+   48  nano shell_operators.sh
+   49  y
+   50  ./shell_operators.sh
+   51  nano shell_operators.sh
+   52  ./shell_operators.sh
+   53  nano shell_operators.sh
+   54  ./shell_operators.sh
+   55  nano shell_operators.sh
+   56  ./shell_operators.sh
+   57  nano shell_operators.sh
+   58  y
+   59  ./shell_operators.sh
+   60  nano shell_operators.sh
+   61  ./shell_operators.sh
+   62  nano shell_operators.sh
+   63  ./shell_operators.sh
+   64  nano shell_operators.sh
+   65  ./shell_operators.sh
+   66  nano shell_operators.sh
+   67  ./shell_operators.sh
+   68  nano shell_operators.sh
+   69  ./shell_operators.sh
+   70  nano shell_operators.sh
+   71  ./shell_operators.sh
+   72  nano shell_operators.sh
+   73  ./shell_operators.sh
+   74  nano shell_operators.sh
+   75  ./shell_operators.sh
+   76  nano shell_operators.sh
+   77  ./shell_operators.sh
+   78  nano shell_operators.sh
+   79  ./shell_operators.sh
+   80  nano shell_operators.sh
+   81  ./shell_operators.sh
+   82  nano git-upload
+   83  history > history.txt
+   84  ./git-upload
+   85  ls -la
+   86  nano shell_operators.sh
+   87  cmd:>./shell_operators.sh 5 3
+   88  nano shell_operators.sh
+   89  ls
+   90  ls -la
+   91  nano shell_operators.sh
+   92  ./shell_operators.sh 5 3
+   93  nano shell_operators.sh
+   94  ./shell_operators.sh 5 3
+   95  nano shell_operators.sh
+   96  y
+   97  ./shell_operators.sh 5 3
+   98  nano shell_operators.sh
+   99  ./shell_operators.sh 5 3
+  100  nano shell_operators.sh
+  101  ./shell_operators.sh 5 3
+  102  nano shell_operators.sh
+  103  ./shell_operators.sh 5 3
+  104  ./shell_operators.sh 10 15
+  105  nano shell_operators.sh
+  106  ./shell_operators.sh 1 2 3 4
+  107  nano shell_operators.sh
+  108  ./shell_operators.sh 1 2 3 4
+  109  nano shell_operators.sh
+  110  ./shell_operators.sh 1 2 3 
+  111  nano shell_operators.sh
+  112  ./shell_operators.sh 4 2 1
+  113  nano shell_operators.sh
+  114  ./shell_operators.sh 4 2 1
+  115  ./shell_operators.sh 10 8 1
+  116  nano shell_operators.sh
+  117  ./shell_operators.sh 5 4 1 2
+  118  ./shell_operators.sh 5 4 2 2
+  119  nano shell_operators.sh
+  120  ./shell_operators.sh 5 4 2 2
+  121  nano shell_operators.sh
+  122  ./shell_operators.sh 5 4 2 2
+  123  nano shell_operators.sh
+  124  ./shell_operators.sh 5 4 2 2
+  125  nano shell_operators.sh
+  126  ./shell_operators.sh 5 4 2 2
+  127  nano shell_operators.sh
+  128  ./shell_operators.sh 5 4 2 2
+  129  nano shell_operators.sh
+  130  ./shell_operators.sh 5 4 1 2
+  131  nano shell_operators.sh
+  132  ./shell_operators.sh 5 4 1 2
+  133  nano shell_operators.sh
+  134  ./shell_operators.sh 5 4 1 2
+  135  nano shell_operators.sh
+  136  ./shell_operators.sh 5 4 1 2
+  137  nano shell_operators.sh
+  138  ./shell_operators.sh 5 4 1 2
+  139  nano shell_operators.sh
+  140  ./shell_operators.sh 5 4 1 2
+  141  nano shell_operators.sh
+  142  history > history_10_10_11_40.txt
+  143  nano git-upload
+  144  history > history_10_11_11_35.txt
+  145  git-upload
+  146  nano shell_operators.sh
+  147  ./shell_operators.sh 5 4 1 2
+  148  nano shell_operators.sh
+  149  ./shell_operators.sh 5 4 
+  150  nano shell_operators.sh
+  151  ./shell_operators.sh 5 4 
+  152  nano shell_operators.sh
+  153  ./shell_operators.sh 5 4 
+  154  ./shell_operators.sh 5 
+  155  ./shell_operators.sh 
+  156  ./shell_operators.sh 5 
+  157  ./shell_operators.sh 5 5
+  158  history > history_11_10_11_40.txt
+  159  ./git-upload
+  160  nano git-upload
+  161  history > history_11_10_11_50.txt
