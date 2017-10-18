@@ -1,0 +1,70 @@
+    1  VirtualBox --startvm XP
+    2  git clone https://github.com/robertsmukans/DMI
+    3  nano shell_operators.sh
+    4  nano dialogs.sh
+    5  chmod 744 shell_dialogs.sh
+    6  chmod 744 dialogs.sh
+    7  ./dialogs.sh
+    8  nano shell_dialog.sh
+    9  nano shell_operators.sh
+   10  nano shell_dialogs.sh
+   11  shell_dialogs.sh
+   12  nano dialogs.sh
+   13  ./dialogs.sh
+   14  nano dialogs.sh
+   15  ./dialogs.sh
+   16  nano dialogs.sh
+   17  ./dialogs.sh
+   18  nano dialogs.sh
+   19  ./dialogs.sh
+   20  nano dialogs.sh
+   21  ./dialogs.sh
+   22  nano dialogs.sh
+   23  ./dialogs.sh
+   24  nano dialogs.sh
+   25  ./dialogs.sh
+   26  nano dialogs.sh
+   27  ./dialogs.sh
+   28  nano dialogs.sh
+   29  ./dialogs.sh
+   30  nano dialogs.sh
+   31  ./dialogs.sh
+   32  nano dialogs.sh
+   33  ./dialogs.sh
+   34  nano dialogs.sh
+   35  ./dialogs.sh
+   36  nano dialogs.sh
+   37  ./dialogs.sh
+   38  nano dialogs.sh
+   39  ./dialogs.sh
+   40  nano dialogs.sh
+   41  ./dialogs.sh
+   42  nano dialogs.sh
+   43  ./dialogs.sh
+   44  nano dialogs.sh
+   45  ./dialogs.sh
+   46  6
+   47  ./dialogs.sh
+   48  nano dialogs.sh
+   49  ./dialogs.sh
+   50  nano dialogs.sh
+   51  ./dialogs.sh
+   52  nano dialogs.sh
+   53  ./dialogs.sh
+   54  nano dialogs.sh
+   55  ./dialogs.sh
+   56  nano dialogs.sh
+   57  ./dialogs.sh
+   58  nano dialogs.sh
+   59  ./dialogs.sh
+   60  nano dialogs.sh
+   61  ./dialogs.sh
+   62  nano dialogs.sh
+   63  ./dialogs.sh
+   64  nano dialogs.sh
+   65  ./dialogs.sh
+   66  nano dialogs.sh
+   67  ./dialogs.sh
+   68  nano dialogs.sh
+   69  ./dialogs.sh
+   70  history > history_18oktobris
