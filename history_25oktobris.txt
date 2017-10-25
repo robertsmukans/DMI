@@ -1,0 +1,45 @@
+    1  VirtualBox --startvm XP
+    2  git clone https://github.com/robertsmukans/DMI
+    3  ls -l
+    4  cd DMI
+    5  nano if_operators.sh
+    6  chmod 744 if_operators.sh
+    7  nano if_operators.sh
+    8  ./if_operators.sh
+    9  nano if_operators.sh
+   10  ./if_operators.sh
+   11  nano if_operators.sh
+   12  ./if_operators.sh 10
+   13  ./if_operators.sh -1
+   14  nano if_operators.sh
+   15  ./if_operators.sh 10
+   16  nano if_operators.sh
+   17  ./if_operators.sh 10
+   18  nano if_operators.sh
+   19  ./if_operators.sh 10
+   20  ./if_operators.sh -10
+   21  nano if_operators.sh
+   22  ./if_operators.sh 0
+   23  nano if_operators.sh
+   24  ./if_operators.sh 10 5 4
+   25  nano if_operators.sh
+   26  ./if_operators.sh 10 5 4
+   27  nano if_operators.sh
+   28  ./if_operators.sh 10 5 4
+   29  nano if_operators.sh
+   30  ./if_operators.sh 10 5 4
+   31  ./if_operators.sh 10 5 4 2 1
+   32  ./if_operators.sh 10 5 4 2 1 8 9
+   33  nano if_operators.sh
+   34  ./if_operators.sh 10 5 4 1
+   35  ./if_operators.sh 1 2 3 4 5
+   36  ./if_operators.sh 1 2 3 4 9
+   37  nano if_operators.sh
+   38  ./if_operators.sh 
+   39  nano if_operators.sh
+   40  nano if_operators.sh 3 5 1 2 9
+   41  ./if_operators.sh  3 5 1 2 9
+   42  nano if_operators.sh
+   43  history > hystory_25oktobris
+   44  nano if_operators.sh
+   45  history > history_25oktobris.txt
