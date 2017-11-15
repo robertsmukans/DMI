@@ -1,0 +1,25 @@
+    1  VirtualBox --startvm XP
+    2  chromium-browser <<7
+    3  chromium-browser &
+    4  git clone https://github.com/robertsmukans/DMI
+    5  cd DMI
+    6  pwd
+    7  cd python
+    8  pwd
+    9  ls -l
+   10  nano sin_caur_summu
+   11  nano sin_caur_summu.py
+   12  python sin_caur_summu.py 
+   13  nano sin_caur_summu.py
+   14  python sin_caur_summu.py 
+   15  nano sin_caur_summu.py
+   16  cp sin_caur_summu.py sin_caur_summu2.py 
+   17  nano sin_caur_summu2.py 
+   18  python sin_caur_summu1.py 
+   19  nano sin_caur_summu2.py 
+   20  python sin_caur_summu2.py 
+   21  nano sin_caur_summu2.py 
+   22  python sin_caur_summu2.py 
+   23  cd ..
+   24  pwd
+   25  history > history_20171115.txt
