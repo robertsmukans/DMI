@@ -1,7 +1,7 @@
 from scipy import special
 x = 1. * input("lietotaj, ludzu ievadi (x): ")
 y = j0(x)
-print "sin(%.2f) = %.2f"%(x,y)
+print "j0(%.2f) = %.2f"%(x,y)
 
 k = 0
 a = (-1)**0*x**0/(2**0)
