@@ -1,0 +1,286 @@
+>> %1.uzdevums atrisinat vienadojumu
+>> x = sym('x');
+>> a + b - exp(b*x.^2-a*x)
+Undefined function or variable 'a'.
+ 
+>> syms x
+>> eqn = a + b - exp(b*x.^2-a*x)
+Undefined function or variable 'a'.
+ 
+>> syms x a b
+>> eqn = a + b - exp(b*x.^2-a*x)
+ 
+eqn =
+ 
+a + b - exp(b*x^2 - a*x)
+ 
+>> solve(x)
+ 
+ans =
+ 
+0
+ 
+>> solve(eqn, x)
+ 
+ans =
+ 
+ (a + (4*b*log(a + b) + a^2)^(1/2))/(2*b)
+ (a - (4*b*log(a + b) + a^2)^(1/2))/(2*b)
+ 
+>> pretty(x)
+x
+
+>> solve(a + b - exp(b*x.^2-a*x))
+ 
+ans =
+ 
+ (a + (4*b*log(a + b) + a^2)^(1/2))/(2*b)
+ (a - (4*b*log(a + b) + a^2)^(1/2))/(2*b)
+ 
+>> solve(a + b - exp(b*x.^2-a*x==0))
+Error using symengine
+An arithmetical expression is expected.
+
+Error in sym/privUnaryOp (line 952)
+            Csym = mupadmex(op,args{1}.s,varargin{:});
+
+Error in sym/exp (line 6)
+Y = privUnaryOp(X, 'symobj::map', 'exp');
+ 
+>> solve(a + b - exp(b*x.^2-a*x==0,x))
+Error using sym/exp
+Too many input arguments.
+ 
+>> solve(a + b - exp(b*x.^2-a*x)==0,x)
+ 
+ans =
+ 
+ (a + (4*b*log(a + b) + a^2)^(1/2))/(2*b)
+ (a - (4*b*log(a + b) + a^2)^(1/2))/(2*b)
+ 
+>> pretty(x)
+x
+
+>> pretty(a)
+a
+
+>> simplify(x)
+ 
+ans =
+ 
+x
+ 
+>> solve(a + b - exp(b*x^2 - a*x)==0,x)
+ 
+ans =
+ 
+ (a + (4*b*log(a + b) + a^2)^(1/2))/(2*b)
+ (a - (4*b*log(a + b) + a^2)^(1/2))/(2*b)
+ 
+>> pretty(x)
+x
+
+>> x = (a + b - exp(b*x^2 - a*x)==0,x)
+ x = (a + b - exp(b*x^2 - a*x)==0,x)
+                                 ↑
+Error: Expression or statement is incorrect--possibly unbalanced (, {,
+or [.
+ 
+>> solve(a + b - exp(b*x^2 - a*x)==b)
+ 
+ans =
+ 
+ (a + (4*b*log(a) + a^2)^(1/2))/(2*b)
+ (a - (4*b*log(a) + a^2)^(1/2))/(2*b)
+ 
+>> solve(a + b - exp(b*x^2 - a*x)==b,x)
+ 
+ans =
+ 
+ (a + (4*b*log(a) + a^2)^(1/2))/(2*b)
+ (a - (4*b*log(a) + a^2)^(1/2))/(2*b)
+ 
+>> syms x
+>> solve(a + b - exp(b*x^2 - a*x)==b,x)
+ 
+ans =
+ 
+ (a + (4*b*log(a) + a^2)^(1/2))/(2*b)
+ (a - (4*b*log(a) + a^2)^(1/2))/(2*b)
+ 
+>> pretty(x)
+x
+
+>> y = solve(a + b - exp(b*x^2 - a*x)==b,x)
+ 
+y =
+ 
+ (a + (4*b*log(a) + a^2)^(1/2))/(2*b)
+ (a - (4*b*log(a) + a^2)^(1/2))/(2*b)
+ 
+>> pretty(y)
+/                        2  \
+| a + sqrt(4 b log(a) + a ) |
+| ------------------------- |
+|            2 b            |
+|                           |
+|                        2  |
+| a - sqrt(4 b log(a) + a ) |
+| ------------------------- |
+\            2 b            /
+
+>> %funkciju atvasinasana
+>> y_atv = diff(y);
+>> y_atv = diff(y)
+ 
+y_atv =
+ 
+   log(a)/(b*(4*b*log(a) + a^2)^(1/2)) - (a + (4*b*log(a) + a^2)^(1/2))/(2*b^2)
+ - (a - (4*b*log(a) + a^2)^(1/2))/(2*b^2) - log(a)/(b*(4*b*log(a) + a^2)^(1/2))
+ 
+>> syms x
+>> y = -x -3*log(x^2-2)
+ 
+y =
+ 
+- x - 3*log(x^2 - 2)
+ 
+>> y_atv = diff(y)
+ 
+y_atv =
+ 
+- (6*x)/(x^2 - 2) - 1
+ 
+>> y_atv = simplify(y_atv)
+ 
+y_atv =
+ 
+- (6*x)/(x^2 - 2) - 1
+ 
+>> n = [-2:0.01:2];
+>> y_vec = vectorize(y)
+
+y_vec =
+
+- x - 3.*log(x.^2 - 2)
+
+>> y_atv_vect = vectorize(y_atv)
+
+y_atv_vect =
+
+- (6.*x)./(x.^2 - 2) - 1
+
+>> y_vect
+Undefined function or variable 'y_vect'.
+ 
+Did you mean:
+>> y_vec
+
+y_vec =
+
+- x - 3.*log(x.^2 - 2)
+
+>> y_vect = vectorize(y)
+
+y_vect =
+
+- x - 3.*log(x.^2 - 2)
+
+>> y_vect
+
+y_vect =
+
+- x - 3.*log(x.^2 - 2)
+
+>> y_atv_vect = vectorize(y_atv)
+
+y_atv_vect =
+
+- (6.*x)./(x.^2 - 2) - 1
+
+>> y_vect
+
+y_vect =
+
+- x - 3.*log(x.^2 - 2)
+
+>> y_num = eval(y_vect);
+>> y_atv_num = eval(y_atv_vect);
+>> plot(x,y_num,x,y_atv);
+Error using plot
+Data must be numeric, datetime, duration or an array convertible to
+double.
+ 
+>> plot(n,y_num,n,y_atv);
+Error using plot
+Data must be numeric, datetime, duration or an array convertible to
+double.
+ 
+>> x = [-2:0.01:2];
+>> plot(x,y_num,x,y_atv);
+Error using plot
+Data must be numeric, datetime, duration or an array convertible to
+double.
+ 
+>> %...
+>> 
+>> syms x
+>> y = -x -3*log(x^2-2)
+ 
+y =
+ 
+- x - 3*log(x^2 - 2)
+ 
+>> y_atv = diff(y)
+ 
+y_atv =
+ 
+- (6*x)/(x^2 - 2) - 1
+ 
+>> x = [-2:0.01:2];
+>> y_atv_vect = vectorize(y_atv)
+
+y_atv_vect =
+
+- (6.*x)./(x.^2 - 2) - 1
+
+>> y_vect
+
+y_vect =
+
+- x - 3.*log(x.^2 - 2)
+
+>> y_num
+ 
+y_num =
+ 
+- x - 3*log(x^2 - 2)
+ 
+>> y_num = eval(y_vect);
+>> y_atv_num = eval(y_atv_vect);
+>> plot(x,y_num,x,y_atv_vect);
+Error using plot
+Data must be a single matrix Y or a list of pairs X,Y.
+ 
+>> plot(x,y_num,x,y_atv_num);
+Warning: Imaginary parts of complex X and/or Y arguments ignored 
+>> y_ltx = latex(y)
+
+y_ltx =
+
+ - x - 3\, \mathrm{log}\!\left(x^2 - 2\right)
+
+>> y_atv_ltx = latex(y_atv);
+>> h=legend(['$',y_ltx,'$'],['$',y_atv_ltx,'$']);
+Warning: Error updating Legend.
+
+ Character vector must have valid interpreter syntax:
+$ - x - 3\, \mathrm{log}\!\left(x^2 - 2\right)$
+ 
+Warning: Error updating Legend.
+
+ Character vector must have valid interpreter syntax:
+$ - \frac{6\, x}{x^2 - 2} - 1$
+ 
+>> set(h,'Interpreter','latex')
+>> 
