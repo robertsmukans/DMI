@@ -1,0 +1,149 @@
+
+
+function y =  lab3_demo(t)
+t_zero_f = (t>=0)&(t<0.5); t_zero = t(t_zero_f);
+t_const_f = (t>=0.5)&(t<2); t_const = t(t_const_f);
+t_noise_f = (t>=2)&(t<3.5); t_noise = t(t_noise_f);
+t_sin_f = (t>=3.5)&(t<5.5); t_sin = t(t_sin_f);
+t_saw_f = (t>=5.5)&(t<=6); t_saw = t(t_saw_f);
+t = [t_zero,t_const,t_noise,t_sin,t_saw];
+
+
+%% nuļļu signāls
+%t_zero = 0:0.01:0.5;
+y_zero = zeros(size(t_zero));
+%plot(t_zero,y_zero)
+%%Lineari mainigs signals
+%t_saw = 5.5:0.01:6;
+k = (-1-(0))/(5.5-6);
+delay  = 6;
+y_saw = k*(t_saw-delay);
+%plot(t_saw,y_saw)
+%% Trokšņa signāls
+%t_noise = 2:0.01:3.5;
+y_noise = rand(size(t_noise))*2-1;
+%plot(t_noise,y_noise)
+%% Sinusa signals
+%t_sin = 3.5:0.01:5.5;
+A0=0; A = 2; T = (5-3.5)/4.5; f = 1/T; delay = 1;
+y_sin = A0+A*sin(2*pi*(-f)*(t_sin-delay));
+%plot(t_sin,y_sin)
+%% Konstantes signāls
+%t_const = 0.5:0.01:2;
+y_const = zeros(size(t_const))+2; 
+%plot(t_const,y_const)
+%% Signālu apvienošana
+t = [t_zero,t_const,t_noise,t_sin,t_saw];
+y = [y_zero,y_const,y_noise,y_sin,y_saw];
+if nargout == 0
+plot(t,y)
+ylim([-2.5,2.5])
+end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R1=1; R2=2; R3=3; R4=4; R5=5; R6=6; R7=7; I3=sin(4*t); 
+Undefined function or variable 't'.
+ 
+>> lab3_E2
+Undefined function or variable 'lab3_E2'.
+ 
+>> lab3_E2 = function y =  lab3_demo
+t_zero_f = (t>=0)&(t<0.5); t_zero = t(t_zero_f);
+t_const_f = (t>=0.5)&(t<2); t_const = t(t_const_f);
+t_noise_f = (t>=2)&(t<3.5); t_noise = t(t_noise_f);
+t_sin_f = (t>=3.5)&(t<5.5); t_sin = t(t_sin_f);
+t_saw_f = (t>=5.5)&(t<=6); t_saw = t(t_saw_f);
+t = [t_zero,t_const,t_noise,t_sin,t_saw];
+y = [y_zero,y_const,y_noise,y_sin,y_saw];
+plot(t,y)
+%% nuļļu signāls
+t_zero = 0:0.01:0.5;
+y_zero = zeros(size(t_zero));
+plot(t_zero,y_zero)
+%%Lineari mainigs signals
+t_saw = 5.5:0.01:6;
+k = (-1-(0))/(5.5-6);
+delay  = 6;
+y_saw = k*(t_saw-delay);
+plot(t_saw,y_saw)
+%% Trokšņa signāls
+t_noise = 2:0.01:3.5;
+y_noise = rand(size(t_noise))*2-1;
+plot(t_noise,y_noise)
+%% Sinusa signals
+t_sin = 3.5:0.01:5.5;
+A0=0; A = 2; T = (5-3.5)/4.5; f = 1/T; delay = 1;
+y_sin = A0+A*sin(2*pi*(-f)*(t_sin-delay));
+plot(t_sin,y_sin)
+%% Konstantes signāls
+t_const = 0.5:0.01:2;
+y_const = zeros(size(t_const))+2; 
+plot(t_const,y_const)
+%% Signālu apvienošana
+t = [t_zero,t_const,t_noise,t_sin,t_saw];
+y = [y_zero,y_const,y_noise,y_sin,y_saw];
+plot(t,y)
+ylim([-2.5,2.5]);
+
+2=lab3_E2;
+>> t=0:0.01:6;
+>> J3=sin(4*t);
+>> E1=6*ones(size(t));
+>> R1=1; R2=2; R3=3; R4=4; R5=5; R6=6; R7=7; I3=sin(4*t);
+>> R1=1; R2=2; R3=3; R4=4; R5=5; R6=6; R7=7;
+>> R1=1; R2=2; R3=3; R4=4; R5=5; R6=6; R7=7; R8=8;
+>> E = [-E1;E2;J3];
+Error using vertcat
+Dimensions of matrices being concatenated are not consistent.
+ 
+>> t = 0:0.01:6;
+>> y = lab3_E2(t);
+>> y = lab3_E2(t);
+>> y = lab3_E2(t);
+>> lab3_E2(t);
+>> E2=lab3_E2(t);
+>> E = [-E1;E2;J3];;
+>> E = [-E1;E2;J3];
+>> R= [R1+R2 0 0; 0 R8+R4+R3 -R8; 0 -R8 R7+R6+R5+R8];
+>> Ik=R\E;
+>> IR7=(E2)\R7;
+>> UR7=IR7*R7;
+>> PR7=UR7*IR7;
+Error using  * 
+Inner matrix dimensions must agree.
+ 
+>> PR7=UR7.*IR7;
+>> plot(t,IR7)
+>> plot(t,IR7,t,PR7)
+>> plotyy(t,IR7,t,PR7)
