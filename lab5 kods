@@ -11,6 +11,10 @@ end
 plot(t,Et,t,Urt)
 
 
+
+
+
+
 %newmet5
 
 
@@ -25,12 +29,27 @@ while abs(delta) > epsilon
     x0 = x0-delta;
 end    
 
+
+
+
+
+
+
+
 %funx
 
 function fx = funx(UR)
 global E R i0 a
 %i0=1; a=1; E=1; R=1;
 fx = i0*(exp(a*(E-UR))-1)-UR/R;
+
+
+
+
+
+
+
+
 
 %fund
 
