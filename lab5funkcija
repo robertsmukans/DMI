@@ -1,0 +1,19 @@
+function y = lab3_demo
+t=0:0.01:6;
+t_zero_f = (t>=0)&(t<0.5); t_zero = t(t_zero_f);
+t_const_f = (t>=0.5)&(t<2); t_const = t(t_const_f);
+t_noise_f = (t>=2)&(t<3.5); t_noise = t(t_noise_f);
+t_sin_f = (t>=3.5)&(t<5.5); t_sin = t(t_sin_f);
+t_saw_f = (t>=5.5)&(t<=6); t_saw = t(t_saw_f);
+y_zero = zeros(size(t_zero));
+k = (-1-(0))/(5.5-6);
+delay = 6;
+y_saw = k*(t_saw-delay);
+y_noise = rand(size(t_noise))*2-1;
+A0=0; A = 2; T = (5-3.5)/4.5; f = 1/T; delay = 1;
+y_sin = A0+A*sin(2*pi*(-f)*(t_sin-delay));
+y_const = zeros(size(t_const))+2;
+t = [t_zero,t_const,t_noise,t_sin,t_saw];
+y = [y_zero,y_const,y_noise,y_sin,y_saw];
+plot(t,y)
+ylim([-2.5,2.5])
