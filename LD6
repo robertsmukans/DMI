@@ -65,6 +65,48 @@ xvid4 = (1/(N-1))* (j+k)
 
 
 
+3.maijs
+
+
+%% istas videjas vertibas aprekins
+% * sinusoida
+
+syms t_sin
+A0=0; A = 2; T = (5-3.5)/4.5; f = 1/T; delay = 1;
+y_sin = A0+A*sin(2*pi*(-f)*(t_sin-delay));
+delay  = 6;
+int_sin = int(y_sin,t_sin,3.5,5.5)
+
+%%
+% *
+
+syms t_saw
+k = (-1-(0))/(5.5-6);
+delay  = 6;
+y_saw = k*(t_saw-delay);
+int_saw = int(y_saw,t_saw,5.5,6)
+
+%%
+% *
+syms t_const
+y_const = 2; 
+int_const = int(2,t_const,0.5,2)
+
+%%
+% Liekam visu kopa
+ista_vv = double(1/6*(int_const+int_saw+int_sin))
+
+%%
+% Salidzinasim 3a formulu ar isto videjo vertibu
+dt = [1 0.1 0.01 0.001]; % sie bus laika solis
+xvid3am = [];
+for dtc = dt
+    t = 0:dtc:6;
+    N=length(t);
+    xvid3a=1/(N-1)*sum(sig(t(1:end-1)))
+    xvid3am = [xvid3am,xvid3a];
+end
+semilogx(dt,xvid3am,'-o',dt,dt*0+ista_vv)
 
 
 
