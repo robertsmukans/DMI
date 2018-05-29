@@ -1,0 +1,22 @@
+R1=1000; R2=3000; R3=5000; R4=1000; R5=3000; R6=5000; 
+E1=12; E2=15;
+J1=0.008; J2=0.008;
+R = [R1+R3+R2 R3 -R2; R3 R4+R3+R5 R5; -R2 R5 R2+R5+R6];
+E = [-E1+(J1*R1); (-E1-(J2*R4)); -E2];
+Ik = R\E;
+IR1 = J1-Ik(1,:);
+UR1=IR1*R1
+IR3=Ik(1,:)+Ik(2,:);
+UR3=IR3*R3
+IR2=Ik(1,:)-Ik(3,:);
+UR2=IR2*R2
+IR4 = J2+Ik(2,:);
+UR4 = IR4*R4
+IR5 = Ik(2,:)+Ik(3,:);
+UR5 = IR5*R5
+IR6 = Ik(3,:)
+UR6 = IR6*R6
+I= [IR1 IR2 IR3 IR4 IR5 IR6]
+U =[UR1 UR2 UR3 UR4 UR5 UR6]
+KOnturstravas = [Ik(1), Ik(2), Ik(3)]
+Ukspl =  UR4 + UR3 + E1 + UR5
