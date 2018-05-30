@@ -1,0 +1,28 @@
+R1=3000; R2=5000; R3=7000; R4=9000; R5=6000; R6=4000; 
+E1=15; E2=18;
+J1=0.008; J2=0.010;
+G1 = 1/R1;
+G2 = 1/R2;
+G3 = 1/R3;
+G4 = 1/R4;
+G5 = 1/R5;
+G6 = 1/R6;
+
+fi = [G1+G3+G4, -G3, -G1; -G3, G2+G3+G5, -G2; -G1, -G2, G1+G2+G6];
+E = [-E1*G3+J1-J2; E1*G3 ; E2*G6-J2];
+f = fi\E
+%I1= (f(1)-f(3)+EJR1)*G1
+%I2= (f(1)-f(2))*G2
+%I3= (f(1)-f(2)-E1)*G3
+%I4= (0-f(1)-EJR2)*G4
+%I5= (f(2)-0)*G5
+%I6= (f(3)-0+E1)*G6
+%stravas = [I1 I2 I3 I4 I5 I6] 
+strava1 = (f(1)-f(3))*G1
+strava2 = (f(2)-f(3))*G2
+strava3 = (f(1)-f(2)-E1)*G3
+strava4 = (0-f(1))*G4
+strava5 = (0-f(2))*G5
+strava6 = (0-f(3)+E2)*G6
+
+zarustravas = [strava1 strava2 strava3 strava4 strava5 strava6]
